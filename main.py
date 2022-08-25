@@ -18,10 +18,6 @@ def sit(a, b):
     return (correct, found)
 
 
-def test_sit():
-    assert sit("123", "111") == (1, 0)
-
-
 for i in range(1000):
     i = str(i).zfill(3)
     if sit(i, "682") == (1, 0) and \
